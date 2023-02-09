@@ -34,7 +34,11 @@ if(args.e) {
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&daily=precipitation_hours&timezone=' + timezone);
 const data = await response.json();
 
-const days = args.d;
+if (args.d) {
+    const days = args.d;
+} else {
+    const days = 1;
+}
 
 if (args.j) {
     if (!long || !lat) {
