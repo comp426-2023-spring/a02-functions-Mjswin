@@ -36,6 +36,20 @@ const data = await response.json();
 
 const days = args.d;
 
+if (args.j) {
+    if (!long || !lat) {
+        console.log("Location must be specified");
+    }
+    console.log(data);
+    process.exit(0);
+}
+
+if (data.daily.precipitation_hours[days] > 0) {
+    console.log("You might need your galoshes ");
+} else {
+    console.log("You will not need your galoshes ");
+}
+
 if (days == 0) {
     console.log("today.");
   } else if (days > 1) {
