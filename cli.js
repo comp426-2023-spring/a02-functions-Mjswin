@@ -20,7 +20,7 @@ if (args.h) {
 var timezone = moment.tz.guess();
 
 if(args.n) {
-    varlat = args.n;
+    var lat = args.n;
 } else {
     var lat = args.s;
 }
