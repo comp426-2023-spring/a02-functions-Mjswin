@@ -35,18 +35,14 @@ const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' 
 const data = await response.json();
 
 if (args.d) {
-    const days = args.d;
+    var days = args.d;
 } else {
-    const days = 1;
+    var days = 1;
 }
 
 if (args.j) {
-    if (!long) {
-        console.log("Longitude must be in range");
-        process.exit(0);
-    }
-    if (!lat) {
-        console.log("Latitude must be in range")
+    if (!long || !lat) {
+        console.log("Latitude must be in range");
         process.exit(0);
     }
     console.log(data);
