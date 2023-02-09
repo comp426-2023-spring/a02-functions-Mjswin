@@ -17,18 +17,18 @@ if (args.h) {
     process.exit(0);
 }
 
-const timezone = moment.tz.guess();
+var timezone = moment.tz.guess();
 
 if(args.n) {
-    const lat = args.n;
+    varlat = args.n;
 } else {
-    const lat = args.s;
+    var lat = args.s;
 }
 
 if(args.e) {
-    const long = args.e;
+    var long = args.e;
 } else {
-    const long = args.w;
+    var long = args.w;
 }
 
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + long + '&daily=precipitation_hours&timezone=' + timezone);
