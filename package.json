@@ -1,0 +1,28 @@
+{
+  "name": "a02-functions-mjswin",
+  "version": "1.0.0",
+  "description": "a02 functions",
+  "main": "cli.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-Mjswin.git"
+  },
+  "author": "Mitchell Swindell",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-Mjswin/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-nylaanderson#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.40",
+    "node-fetch": "^3.3.0"
+  }, 
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module"
+}
