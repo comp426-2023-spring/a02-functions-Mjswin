@@ -36,9 +36,9 @@ const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' 
 const data = await response.json();
 
 if (args.d) {
-    var day = args.d;
+    var day1 = args.d;
 } else {
-    var day = 1;
+    var day1 = 1;
 }
 
 if (args.j) {
@@ -50,7 +50,7 @@ if (args.j) {
     process.exit(0);
 }
 
-if (data.daily.precipitation_hours[day] > 0) {
+if (data.daily.precipitation_hours[day1] > 0) {
     console.log("You might need your galoshes ");
 } else {
     console.log("You will not need your galoshes ");
