@@ -1,7 +1,7 @@
 {
   "name": "a02-functions-mjswin",
   "version": "1.0.0",
-  "description": "a02 functions",
+  "description": "Retrieves precipitation data and recommends if galoshes are needed.",
   "main": "cli.js",
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
